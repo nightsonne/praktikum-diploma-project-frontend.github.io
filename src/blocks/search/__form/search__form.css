@@ -8,6 +8,12 @@
   }
 }
 
+@media screen and (max-width: 670px){
+  .search__form {
+    margin-top: 30px;
+  }
+}
+
 @media screen and (max-width: 500px){
   .search__form {
     margin-top: 122px;

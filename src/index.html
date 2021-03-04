@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,6 +11,7 @@
 </head>
 <body>
   <div class="main-container main-container__image">
+
     <header class="header">
       <h1 class="header__logo">NewsExplorer</h1>
       <nav class="header__nav">
@@ -29,7 +30,18 @@
       <img src="<%=require('./images/menu-open.png')%>" alt="Меню" class="header__nav-icon">
     </header>
 
-    <!-- <div class="phone-menu">
+    <section class="search">
+    <div class="search__container">
+      <h2 class="serch__title">Что творится в мире?</h2>
+      <p class="search__text">Находите самые свежие статьи на любую тему и сохраняйте в своём личном кабинете.</p>
+      <form class="search__form">
+        <input class="search__input" type="text" required placeholder="Введите тему новости" required>
+        <button class="search__button" type="submit">Искать</button>
+      </form>
+    </div>
+    </section>
+
+    <div class="phone-menu">
       <div class="phone-menu__container">
       <div class="phone-menu__header">
         <h1 class="header__logo">NewsExplorer</h1>
@@ -44,19 +56,7 @@
         </nav>
       </div>
     </div>
-    </div> -->
-
-    <section class="search">
-    <div class="search__container">
-      <h2 class="serch__title">Что творится в мире?</h2>
-      <p class="search__text">Находите самые свежие статьи на любую тему и сохраняйте в своём личном кабинете.</p>
-      <form class="search__form">
-        <input class="search__input" type="text" required placeholder="Введите тему новости">
-        <button class="search__button" type="submit">Искать</button>
-      </form>
     </div>
-    </section>
-
     <section class="cards">
       <div class="cards__not-found">
         <img src="<%=require('./images/not-found.png')%>" alt="Не найдено" class="cards__not-found-image">
@@ -114,7 +114,8 @@
       <h3 class="author__title">Об авторе</h3>
       <p class="author__text">Это блок с описанием автора проекта. Здесь следует указать, как вас зовут, чем вы занимаетесь, какими технологиями разработки владеете.<br>
       <br>Также можно рассказать о процессе обучения в Практикуме, чему вы тут научились, и чем можете помочь потенциальным заказчикам.</p>
-    </div>
+      </div>
+    </section>
 
     <div class="popup">
       <div class="popup__content">
@@ -124,12 +125,12 @@
           <div class="form__input-block">
             <label for="email-login" class="form__label"><span class="popup__text-decorated">Email</span></label>
             <input class="form__input" name="email-login" id="email-login" type="email" placeholder="Введите Email" required>
-            <span id="email-error" class="form__error">Неправильный формат email</span>
+            <span id="email-error-login" class="form__error">Неправильный формат email</span>
           </div>
           <div class="form__input-block">
             <label for="password" class="form__label"><span class="popup__text-decorated">Пароль</span></label>
             <input  class="form__input" name="password" id="password" type="password" placeholder="Введите пароль" required minlength="8">
-            <span id="password-error" class="form__error">Минимум 8 символов</span>
+            <span id="password-error-login" class="form__error">Минимум 8 символов</span>
           </div>
           <div class="form__input-block"></div>
           <button type="submit" name="button" class="form__button ">Войти</button>
@@ -148,12 +149,12 @@
           <div class="form__input-block">
             <label for="email-signup" class="form__label"><span class="popup__text-decorated">Email</span></label>
             <input class="form__input" name="email-signup" id="email-signup" type="email" placeholder="Введите Email" required>
-            <span id="email-error" class="form__error">Неправильный формат email</span>
+            <span id="email-error-signup" class="form__error">Неправильный формат email</span>
           </div>
           <div class="form__input-block">
             <label for="password" class="form__label"><span class="popup__text-decorated">Пароль</span></label>
             <input class="form__input" name="password-signup" id="password-signup" type="password" placeholder="Введите пароль" required minlength="8">
-            <span id="password-error" class="form__error">Минимум 8 символов</span>
+            <span id="password-error-signup" class="form__error">Минимум 8 символов</span>
           </div>
           <div class="form__input-block">
             <label for="name" class="form__label"><span class="popup__text-decorated">Имя</span></label>
@@ -177,7 +178,6 @@
       </div>
     </div>
 
-    </section>
     <footer class="footer">
       <div class="footer__copyright">&copy; 2020 Supersite, Powered by News API</div>
       <nav class="footer__menu">
@@ -200,7 +200,7 @@
         </div>
       </nav>
     </footer>
-  </div>
+
   <script src="<%=htmlWebpackPlugin.files.js%>"></script>
 </body>
 </html>

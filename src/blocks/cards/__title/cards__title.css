@@ -17,6 +17,7 @@
   font-size: 20px;
   line-height: 24px;
   margin-bottom: 10px;
+  height: 50px;
   }
 }
 
@@ -24,16 +25,23 @@
   .cards__title {
     font-size: 22px;
     line-height: 24px;
-    margin-bottom: 0;
-    height: 75px;
+    margin-bottom: 10px;
+    height: 50px;
     margin-top: 14px;
   }
 }
 
 @media screen and (max-width: 500px) {
   .cards__title {
-    height: 60px;
+    height: 56px;
     line-height: 26px;
     margin-top: 12px;
   }
+}
+  @media screen and (max-width: 320px) {
+    .cards__title {
+      height: 50px;
+      line-height: 26px;
+      margin-top: 12px;
+    }
 }
