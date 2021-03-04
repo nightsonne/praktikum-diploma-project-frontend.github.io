@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="NewsExplorer - сервис для поиска новостей">
+  <meta name="author" content="T. Lunkova">
+  <title>NewsExplorer</title>
+  <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.css%>">
+  <link rel="icon" href="<%=require('./images/favicon.png')%>" type="image/ico">
+</head>
+<body>
+  <div class="main-container">
+    <header class="header">
+      <h1 class="header__logo header__black">NewsExplorer</h1>
+      <nav class="header__nav">
+        <ul class="header__list">
+          <li class="header__item header__item_main"><a href="./index.html" class="header__active-item header__black">Главная</a></li>
+          <li class="header__item header__item_main"><a href="./about.html" class="header__active-item header__line header__black">Сохранённые статьи</a></li>
+          <li class="header__item">
+            <button class="header__auth header__black">
+            <span class="header__auth-name header__black">Грета</span>
+            <img src="<%=require('./images/logout-black.png')%>" alt="Выйти" class="header__logout-icon header__black">
+          </button>
+        </li>
+        </ul>
+      </nav>
+      <img src="<%=require('./images/menu-open-black.png')%>" alt="Меню" class="header__nav-icon">
+    </header>
+    <!-- <div class="phone-menu">
+      <div class="phone-menu__container">
+      <div class="phone-menu__header">
+        <h1 class="header__logo">NewsExplorer</h1>
+        <img class="phone-menu__close" src="<%=require('./images/close.png')%>" alt="Закрыть">
+      </div>
+        <nav class="phone-menu__nav">
+          <ul class="phone-menu__list">
+            <li class="phone-menu__item-main"><a href="./index.html" class="header__active-item phone-menu__main">Главная</a></li>
+            <li class="phone-menu__item-saved"><a href="./about.html" class="header__active-item phone-menu__saved">Сохранённые статьи</a></li>
+            <li class="phone-menu__item"><button class="header__auth phone-menu__auth">Авторизоваться</button></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    </div> -->
+  <section class="intro">
+    <p class="intro__name">Сохранённые статьи</p>
+    <h2 class="intro__title"> Грета, у вас  <span class="intro__title intro__title_count">5</span> сохранённых статей </h2>
+    <p class="intro__subtitle">По ключевым словам: <span class="intro__subtitle intro__subtitle_tags">Природа, Тайга</span> и <span class="intro__subtitle intro__subtitle_tags-count">2-м другим</span></p>
+  </section>
+  <section class="cards">
+    <div class="cards__container cards__container_save">
+      <div class="cards__list">
+        <div class="cards__item">
+          <div class="cards__trash"></div>
+          <img src="<%=require('./images/card-image-4.png')%>" alt="Новостная картинка" class="cards__image">
+           <div class="cards__text-block">
+          <p class="cards__date">2 августа, 2019</p>
+          <h2 class="cards__title">Национальное достояние – парки</h2>
+          <p class="cards__text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
+          <p class="cards__source">ДЗЕН</p>
+        </div>
+        </div>
+        <div class="cards__item">
+          <div class="cards__trash"></div>
+          <img src="<%=require('./images/card-image-5.png')%>" alt="Новостная картинка" class="cards__image">
+          <div class="cards__text-block">
+          <p class="cards__date">2 августа, 2019</p>
+          <h2 class="cards__title">Лесные огоньки: история одной фотографии</h2>
+          <p class="cards__text">Фотограф отвлеклась от освещения суровой политической реальности Мексики, чтобы запечатлеть ускользающую красоту одного
+            из местных чудес природы.</p>
+          <p class="cards__source">АФИША</p>
+        </div>
+        </div>
+        <div class="cards__item">
+          <div class="cards__trash"></div>
+          <img src="<%=require('./images/card-image-6.png')%>" alt="Новостная картинка" class="cards__image">
+          <div class="cards__text-block">
+          <p class="cards__date">2 августа, 2019</p>
+          <h2 class="cards__title">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</h2>
+          <p class="cards__text">Знаменитый фотограф снимает первозданные леса России, чтобы рассказать о необходимости их сохранения. В этот раз он отправился в Двинско-Пинежскую тайгу, где...</p>
+          <p class="cards__source">МЕДИАЗОНА</p>
+        </div>
+        </div>
+        <div class="cards__item">
+          <div class="cards__trash"></div>
+          <img src="<%=require('./images/card-image-4.png')%>" alt="Новостная картинка" class="cards__image">
+          <div class="cards__text-block">
+          <p class="cards__date">2 августа, 2019</p>
+          <h2 class="cards__title">Лесные огоньки: история одной фотографии</h2>
+          <p class="cards__text">Фотограф отвлеклась от освещения суровой политической реальности Мексики, чтобы запечатлеть ускользающую красоту одного
+            из местных чудес природы.</p>
+          <p class="cards__source">ДЗЕН</p>
+        </div>
+        </div>
+        <div class="cards__item">
+          <div class="cards__trash"></div>
+          <img src="<%=require('./images/card-image-5.png')%>" alt="Новостная картинка" class="cards__image">
+          <div class="cards__text-block">
+          <p class="cards__date">2 августа, 2019</p>
+          <h2 class="cards__title">Национальное достояние – парки</h2>
+          <p class="cards__text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
+          <p class="cards__source">АФИША</p>
+        </div>
+      </div>
+    </div>
+  </section>
+    <footer class="footer">
+      <div class="footer__copyright">&copy; 2020 Supersite, Powered by News API</div>
+      <nav class="footer__menu">
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a class="footer__link" href="./index.html">Главная</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="https://praktikum.yandex.ru/"
+              target="_blank">Яндекс.Практикум</a>
+          </li>
+        </ul>
+        <div class="footer__social">
+          <a href="https://github.com" class="footer__link-social">
+            <img class="footer__social-icon" src="<%=require('./images/github.png')%>" alt=" github">
+          </a>
+          <a href="https://facebook.com" class="footer__link-social">
+            <img class="footer__social-icon" src="<%=require('./images/fb.png')%>" alt="facebook">
+          </a>
+        </div>
+      </nav>
+    </footer>
+  </div>
+  <script src="<%=htmlWebpackPlugin.files.js%>"></script>
+</body>
+</html>

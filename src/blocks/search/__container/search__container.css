@@ -1,0 +1,35 @@
+.search__container {
+  max-width: 42%;
+  padding-top: 80px;
+  padding-bottom: 12px;
+}
+
+@media screen and (max-width: 1024px){
+  .search__container {
+    max-width: 55%;
+  }
+}
+
+@media screen and (max-width: 820px){
+  .search__container {
+    max-width: 60%;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .search__container {
+    max-width: 57%;
+    padding-top: 40px;
+    padding-bottom: 0;
+    height: 296px;
+  }
+}
+
+@media screen and (max-width: 500px){
+  .search__container {
+    max-width: 90%;
+    padding-top: 32px;
+    padding-bottom: 0;
+    height: 320px;
+  }
+}

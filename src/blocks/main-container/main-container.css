@@ -1,0 +1,18 @@
+@import url(./__image/main-container__image.css);
+
+.main-container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 768px){
+  .main-container {
+    max-width: 768px;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .main-container {
+    max-width: 768px;
+  }
+}

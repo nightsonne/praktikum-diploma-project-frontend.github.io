@@ -1,0 +1,42 @@
+.cards__button {
+  width: 288px;
+  height: 64px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  margin-top: 64px;
+  background: #FFFFFF;
+  border: 0;
+  border-radius: 80px;
+  align-self: center;
+  outline: none;
+  cursor: pointer;
+}
+
+.cards__button:hover {
+  background: #e8e8e9;
+}
+
+@media screen and (max-width: 1024px) {
+  .cards__button {
+    width: 240px;
+    height: 56px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .cards__button {
+    margin-top: 32px;
+    margin-left: 15px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .cards__button {
+    width: 288px;
+    height: 56px;
+    margin-top: 21px;
+    margin-bottom: 0;
+    margin-left: 0;
+  }
+}

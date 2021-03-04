@@ -1,0 +1,11 @@
+.footer__social-icon {
+  width: 24px;
+  height: 24px;
+  margin-left: 20px;
+}
+
+@media screen and (max-width: 736px) {
+  .footer__social-icon {
+    margin-left: 19px;
+  }
+}

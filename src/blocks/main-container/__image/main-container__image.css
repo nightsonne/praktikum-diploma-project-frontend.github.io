@@ -1,0 +1,19 @@
+.main-container__image {
+  background-image: url('../../../images/header-background.png');
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 768px) {
+  .main-container__image{
+    background-image: url('../../../images/header-background2.png');
+    background-repeat: no-repeat;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .main-container__image {
+    background-image: url('../../../images/header-background-mobile.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+}

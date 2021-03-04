@@ -1,0 +1,31 @@
+.cards__trash {
+  background-image: url('../../../images/delete-image.png');
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  right: 24px;
+  top: 24px;
+  cursor: pointer;
+}
+
+.cards__trash:hover {
+  background-image: url('../../../images/delete-image-hover.png');
+}
+
+
+@media screen and (max-width: 1024px) {
+  .cards__trash  {
+    right: 8px;
+    top: 8px;
+
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .cards__trash  {
+    right: 16px;
+    top: 16px;
+
+  }
+}

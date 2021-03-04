@@ -1,0 +1,19 @@
+@import url(./__container/phone-menu__container.css);
+@import url(./_list/phone-menu__list.css);
+@import url(./__header/phone-menu__header.css);
+@import url(./__close/phone-menu__close.css);
+@import url(./__main/phone-menu__main.css);
+@import url(./__nav/phone-menu__nav.css);
+@import url(./__auth/phone-menu__auth.css);
+@import url(./__item-main/phone-menu__item-main.css);
+@import url(./__saved/phone-menu__saved.css);
+@import url(./__item-saved/phone-menu__item-saved.css);
+
+.phone-menu {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,.5);
+}
