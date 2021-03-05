@@ -1,0 +1,17 @@
+.author__description {
+  display: flex;
+  flex-direction: column;
+  margin-top: 52px;
+}
+
+@media screen and (max-width: 1024px) {
+  .author__description {
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .author__description {
+    max-width: 288px;
+  }
+}

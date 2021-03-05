@@ -1,0 +1,15 @@
+.cards__preloader {
+  display: block;
+	width: 74px;
+	height: 74px;
+	border: 1px solid;
+  border-color:  #9fa0a5 #d1d2d6 #1A1B22 #626368 ;
+	border-radius: 50%;
+
+	position: relative;
+  margin: auto;
+  top: 0;
+  right: 0;
+  left: 0;
+	bottom: 0;
+}

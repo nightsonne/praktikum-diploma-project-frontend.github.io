@@ -1,0 +1,9 @@
+.popup__link {
+  /* text-decoration: none; */
+  transition: opacity 0.3s ease;
+}
+
+.popup__link:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}

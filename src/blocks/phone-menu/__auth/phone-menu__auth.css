@@ -1,0 +1,9 @@
+.phone-menu__auth {
+  width: 95%;
+  height: 56px;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+}

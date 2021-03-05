@@ -1,0 +1,7 @@
+.cards__flag-marked{
+  background-image: url('../../../images/bookmark-image-marked.png');
+}
+
+.cards__flag-marked:hover {
+  background-image: url('../../../images/bookmark-image-marked.png');
+}

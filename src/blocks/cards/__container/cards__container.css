@@ -1,0 +1,30 @@
+.cards__container {
+  display: flex;
+  flex-direction: column;
+  padding: 82px 104px;
+  background: #f5f6f7;
+}
+
+@media screen and (max-width: 1024px) {
+  .cards__container {
+    padding: 42px 40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .cards__container {
+    padding: 42px 40px;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .cards__container {
+    padding: 42px 20px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .cards__container {
+    padding: 33px 16px 32px;
+  }
+}

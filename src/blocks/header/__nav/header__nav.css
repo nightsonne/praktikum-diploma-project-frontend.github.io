@@ -1,0 +1,15 @@
+.header__nav {
+  margin: 19px 104px 0 0 ;
+}
+
+@media screen and (max-width: 768px){
+  .header__nav {
+    margin: 14px 40px 0 0 ;
+  }
+}
+
+@media screen and (max-width: 650px){
+  .header__nav {
+  display: none;
+  }
+}

@@ -1,0 +1,31 @@
+@import url(./__not-found/cards__not-found.css);
+@import url(./__not-found-image/cards__not-found-image.css);
+@import url(./__not-found-title/cards__not-found-title.css);
+@import url(./__not-found-text/cards__not-found-text.css);
+@import url(./__loading/cards__loading.css);
+@import url(./__preloader/cards__preloader.css);
+@import url(./__loading-title/cards__loading-title.css);
+@import url(./__container/cards__container.css);
+@import url(./__container_save/cards__container_save.css);
+@import url(./__result/cards__result.css);
+@import url(./__list/cards__list.css);
+@import url(./__item/cards__item.css);
+@import url(./__flag/cards__flag.css);
+@import url(./__flag-marked/cards__flag-marked.css);
+@import url(./__image/cards__image.css);
+@import url(./__text-block/cards__text-block.css);
+@import url(./__date/cards__date.css);
+@import url(./__title/cards__title.css);
+@import url(./__text/cards__text.css);
+@import url(./__source/cards__source.css);
+@import url(./__button/cards__button.css);
+@import url(./__trash/cards__trash.css);
+
+.cards {
+  width: 100%;
+  height: auto;
+  background: #F5F6F7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

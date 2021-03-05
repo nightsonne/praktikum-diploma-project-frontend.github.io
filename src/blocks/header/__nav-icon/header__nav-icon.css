@@ -1,0 +1,21 @@
+.header__nav-icon {
+  display: none;
+}
+
+@media screen and (max-width: 650px){
+  .header__nav-icon {
+    display: block;
+    margin: 24px 20px 24px 0;
+    width: 32px;
+    height: 32px;
+
+  }
+}
+
+@media screen and (max-width: 350px){
+  .header__nav-icon {
+    width: 16px;
+    height: 16px;
+    display: block;
+  }
+}
