@@ -59,11 +59,9 @@ const signIn = (data, popup, header) => {
   const mainApi = new MainApi();
   mainApi.signin(data)
     .then((res)=>{
-      console.log(res, data);
       localStorage.setItem('token',res.token);
       mainApi.getUserData(res.token)
         .then(res=>{
-          console.log(res.name);
           localStorage.setItem('username',res.name)
           header.setHeader({isLoggedIn: true, userName:res.name});
         })
