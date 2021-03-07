@@ -1,6 +1,6 @@
 {
   "name": "praktikum-diploma-project-frontend.github.io",
-  "homepage": "https://github.com/nightsonne/praktikum-diploma-project-frontend.github.io/",
+  "homepage": "https://github.com/nightsonne/praktikum-diploma-project-frontend.github.io#readme",
   "version": "1.0.0",
   "description": "Diploma frontend project into webdev course",
   "main": "index.js",
@@ -18,10 +18,10 @@
   "bugs": {
     "url": "https://github.com/nightsonne/praktikum-diploma-project-frontend.github.io/issues"
   },
-  "homepage": "https://github.com/nightsonne/praktikum-diploma-project-frontend.github.io#readme",
   "devDependencies": {
     "@babel/cli": "7.12.13",
     "@babel/core": "7.12.13",
+    "@babel/plugin-proposal-class-properties": "^7.13.0",
     "@babel/preset-env": "7.12.13",
     "autoprefixer": "10.2.4",
     "babel-loader": "8.2.2",

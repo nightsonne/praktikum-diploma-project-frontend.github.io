@@ -11,9 +11,26 @@
   flex-direction: column;
   align-items: center;
 }
-
 @media screen and (max-width: 500px){
   .search {
-    height: 480px;
+    height: 800px;
+  }
+}
+
+@media screen and (max-width: 450px){
+  .search {
+    height: 680px;
+  }
+}
+
+@media screen and (max-width: 400px){
+  .search {
+    height: 630px;
+  }
+}
+
+@media screen and (max-width: 320px){
+  .search {
+    height: 536px;
   }
 }

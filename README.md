@@ -1,6 +1,6 @@
 # praktikum-diploma-project-frontend.github.io
 
-### верстка для дипломной работы на курсе webdev
+### верстка и js для дипломной работы на курсе webdev
 В данном проекте сверстаны страницы для сервиса по поиску новостей: 
 [Главная](https://nightsonne.github.io/praktikum-diploma-project-frontend.github.io/index.html) и [Сохраненные статьи](https://nightsonne.github.io/praktikum-diploma-project-frontend.github.io/saved.html)
 

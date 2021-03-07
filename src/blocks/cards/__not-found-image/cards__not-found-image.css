@@ -1,4 +1,7 @@
 .cards__not-found-image {
-  width: 74px;
-  height: 74px;
+  width: 80px;
+  height: 80px;
+  background-image: url('../../../images/not-found.png');
+  display: block;
+  margin: auto;
 }

@@ -17,14 +17,14 @@
       <nav class="header__nav">
         <ul class="header__list">
           <li class="header__item header__item_main"><a href="./index.html" class="header__active-item header__line">Главная</a></li>
-          <!--<li class="header__item header__item_main"><a href="./saved.html" class="header__active-item header__nonactive-item">Сохранённые статьи</a></li>-->
-          <li class="header__item"><button class="header__auth">Авторизоваться</button></li>
-          <!-- <li class="header__item">
+          <li class="header__item header__item_main header__item_main-saved"><a href="./saved.html" class="header__active-item header__nonactive-item">Сохранённые статьи</a></li>
+          <!--<li class="header__item"><button class="header__auth">Авторизоваться</button></li>-->
+          <li class="header__item">
             <button class="header__auth">
             <span class="header__auth-name">Грета</span>
-            <img src="<%=require('./images/logout-theme.png')%>" alt="Выйти" class="header__logout-icon">
+            <img src="<%=require('./images/logout.png')%>" alt="Выйти" class="header__logout-icon">
           </button>
-        </li>-->
+        </li>
         </ul>
       </nav>
       <img src="<%=require('./images/menu-open.png')%>" alt="Меню" class="header__nav-icon">
@@ -35,7 +35,10 @@
       <h2 class="serch__title">Что творится в мире?</h2>
       <p class="search__text">Находите самые свежие статьи на любую тему и сохраняйте в своём личном кабинете.</p>
       <form class="search__form">
-        <input class="search__input" type="text" required placeholder="Введите тему новости" required>
+        <div class="form__input-block">
+          <input class="search__input" type="text" required placeholder="Введите тему новости" data-propname="query" minlength="3">
+          <span id="search-error" class="form__error">Введите более 8 символов</span>
+        </div>
         <button class="search__button" type="submit">Искать</button>
       </form>
     </div>
@@ -51,28 +54,28 @@
           <ul class="phone-menu__list">
             <li class="phone-menu__item-main"><a href="./index.html" class="header__active-item phone-menu__main">Главная</a></li>
             <li class="phone-menu__item-saved"><a href="./saved.html" class="header__active-item phone-menu__saved">Сохранённые статьи</a></li>
-            <li class="phone-menu__item"><button class="header__auth phone-menu__auth">Авторизоваться</button></li>
+            <li class="phone-menu__item"><button class="header__auth header__auth-name phone-menu__auth"></button></li>
           </ul>
         </nav>
       </div>
     </div>
-    </div>
+
     <section class="cards">
-      <div class="cards__not-found">
+      <!--<div class="cards__not-found">
         <img src="<%=require('./images/not-found.png')%>" alt="Не найдено" class="cards__not-found-image">
         <p class="cards__not-found-title">Ничего не найдено</p>
         <p class="cards__not-found-text">К сожалению по вашему запросу
           ничего не найдено.</p>
-      </div>
-      <div class="cards__loading">
+      </div>-->
+      <!--<div class="cards__loading">
         <div class="cards__preloader"></div>
         <p class="cards__loading-title">Идет поиск новостей...</p>
-      </div>
+      </div>-->
       <div class="cards__container">
 
       <h2 class="cards__result">Результаты поиска</h2>
       <div class="cards__list">
-        <div class="cards__item">
+        <!--<div class="cards__item">
           <div class="cards__flag cards__flag-marked"></div>
           <img src="<%=require('./images/card-image-1.png')%>" alt="Новостная картинка" class="cards__image">
            <div class="cards__text-block">
@@ -101,7 +104,7 @@
           <p class="cards__text">Знаменитый фотограф снимает первозданные леса России, чтобы рассказать о необходимости их сохранения. В этот раз он отправился в Двинско-Пинежскую тайгу, где...</p>
           <p class="cards__source">РИА</p>
         </div>
-        </div>
+        </div>-->
       </div>
 
       <button class="cards__button">Показать еще</button>
@@ -118,63 +121,72 @@
     </section>
 
     <div class="popup">
-      <div class="popup__content">
+      <div class="popup__content popup__content_hide" id="popup__login">
         <img class="popup__close" src="<%=require('./images/close.png')%>" alt="Закрыть">
         <h3 class="popup__title">Вход</h3>
         <form class="form" name="login" novalidate>
           <div class="form__input-block">
             <label for="email-login" class="form__label"><span class="popup__text-decorated">Email</span></label>
-            <input class="form__input" name="email-login" id="email-login" type="email" placeholder="Введите Email" required>
+            <input class="form__input form__input_type_email" name="email-login" id="email-login" type="email" placeholder="Введите Email" required data-propname="email">
             <span id="email-error-login" class="form__error">Неправильный формат email</span>
           </div>
           <div class="form__input-block">
             <label for="password" class="form__label"><span class="popup__text-decorated">Пароль</span></label>
-            <input  class="form__input" name="password" id="password" type="password" placeholder="Введите пароль" required minlength="8">
+            <input  class="form__input form__input_type_password" name="password" id="password" type="password" placeholder="Введите пароль" required data-propname="password" minlength="8">
             <span id="password-error-login" class="form__error">Минимум 8 символов</span>
           </div>
           <div class="form__input-block"></div>
-          <button type="submit" name="button" class="form__button ">Войти</button>
+          <button type="submit" name="button" class="form__button disabled="true>Войти</button>
         </form>
         <p class="popup__text">или
-          <span class="popup__link popup__text-decorated">Зарегистрироваться</span>
+          <span class="popup__link popup__text-decorated" data-action="popup__signup"
+          >Зарегистрироваться</span>
         </p>
       </div>
-    </div>
 
-    <div class="popup">
-      <div class="popup__content">
+      <div class="popup__content" id="popup__signup">
         <img class="popup__close" src="<%=require('./images/close.png')%>" alt="Закрыть">
         <h3 class="popup__title">Регистрация</h3>
         <form class="form" name="signup" novalidate>
           <div class="form__input-block">
             <label for="email-signup" class="form__label"><span class="popup__text-decorated">Email</span></label>
-            <input class="form__input" name="email-signup" id="email-signup" type="email" placeholder="Введите Email" required>
+            <input class="form__input form__input_type_email" name="email-signup" id="email-signup" type="email" placeholder="Введите Email" data-propname="email" required>
             <span id="email-error-signup" class="form__error">Неправильный формат email</span>
           </div>
           <div class="form__input-block">
             <label for="password" class="form__label"><span class="popup__text-decorated">Пароль</span></label>
-            <input class="form__input" name="password-signup" id="password-signup" type="password" placeholder="Введите пароль" required minlength="8">
+            <input class="form__input form__input_type_password " name="password-signup" id="password-signup" type="password" placeholder="Введите пароль" data-propname="password" required minlength="8">
             <span id="password-error-signup" class="form__error">Минимум 8 символов</span>
           </div>
           <div class="form__input-block">
             <label for="name" class="form__label"><span class="popup__text-decorated">Имя</span></label>
-            <input class="form__input" name="inname" id="name" type="text" placeholder="Введите своё имя" required minlength="2" maxlength="30">
+            <input class="form__input form__input_type_name" name="name" id="name" type="text" placeholder="Введите своё имя" data-propname="name" required minlength="2" maxlength="30">
             <span id="name-error" class="form__error">Минимум 2 символа</span>
           </div>
           <div class="form__input-block">
-            <span id="exists-error" class="form__error form__error_centre">Такой пользователь уже зарегестрирован</span>
+            <span id="already-exists-error" class="form__error form__error_centre">Такой пользователь уже есть</span>
             <button type="submit" name="button" class="form__button">Зарегистрироваться</button>
           </div>
         </form>
-        <p class="popup__text">или <span class="popup__link popup__text-decorated">Войти</span></p>
+        <p class="popup__text">или <span class="popup__link popup__text-decorated" data-action="popup__login"
+          >Войти</span></p>
       </div>
-    </div>
 
-    <div class="popup popup__success">
-      <div class="popup__content">
+      <div class="popup__content popup__content_hide" id="popup__success">
         <img class="popup__close" src="<%=require('./images/close.png')%>" alt="Закрыть">
         <h3 class="popup__title">Пользователь успешно зарегистрирован!</h3>
-        <p class="popup__text popup__text_enter"><span class="popup__text-decorated popup__link">Войти</span></p>
+        <p class="popup__text popup__text_enter"><span class="popup__text-decorated popup__link" data-action="popup__login"
+          >Войти</span></p>
+      </div>
+
+      <div class="popup__content popup__content_hide" id="popup__error">
+        <img class="popup__close" src="<%=require('./images/close.png')%>" alt="Закрыть">
+        <h3 class="popup__title">Такой пользователь уже зарегистрирован. Попробуйте ввести другой email.</h3>
+        <p class="popup__text popup__text_enter">
+          <span class="popup__text-decorated popup__link" data-action="popup__signup">Зарегистрироваться</span>
+          или
+          <span class="popup__text-decorated popup__link" data-action="popup__login">Войти</span>
+        </p>
       </div>
     </div>
 
@@ -200,7 +212,7 @@
         </div>
       </nav>
     </footer>
-
+  </div>
   <script src="<%=htmlWebpackPlugin.files.js%>"></script>
 </body>
 </html>

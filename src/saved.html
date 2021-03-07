@@ -27,7 +27,7 @@
       </nav>
       <img src="<%=require('./images/menu-open-black.png')%>" alt="Меню" class="header__nav-icon">
     </header>
-    <!-- <div class="phone-menu">
+    <div class="phone-menu">
       <div class="phone-menu__container">
       <div class="phone-menu__header">
         <h1 class="header__logo">NewsExplorer</h1>
@@ -37,21 +37,21 @@
           <ul class="phone-menu__list">
             <li class="phone-menu__item-main"><a href="./index.html" class="header__active-item phone-menu__main">Главная</a></li>
             <li class="phone-menu__item-saved"><a href="./saved.html" class="header__active-item phone-menu__saved">Сохранённые статьи</a></li>
-            <li class="phone-menu__item"><button class="header__auth phone-menu__auth">Авторизоваться</button></li>
+            <li class="phone-menu__item"><button class="header__auth phone-menu__auth header__auth-name"></button></li>
           </ul>
         </nav>
       </div>
     </div>
-    </div> -->
+
   <section class="intro">
     <p class="intro__name">Сохранённые статьи</p>
-    <h2 class="intro__title"> Грета, у вас  <span class="intro__title intro__title_count">5</span> сохранённых статей </h2>
-    <p class="intro__subtitle">По ключевым словам: <span class="intro__subtitle intro__subtitle_tags">Природа, Тайга</span> и <span class="intro__subtitle intro__subtitle_tags-count">2-м другим</span></p>
+    <h2 class="intro__title"><span class="intro__owner" id="owner"></span>, у вас сейчас сохраненных статей: <span class="intro__title intro__title_count"></span></h2>
+    <p class="intro__subtitle">По ключевым словам: <span class="intro__subtitle intro__subtitle_tags"></span><span class="intro__subtitle intro__subtitle_tags-count">2-м другим</span></p>
   </section>
   <section class="cards">
     <div class="cards__container cards__container_save">
       <div class="cards__list">
-        <div class="cards__item">
+        <!--<div class="cards__item">
           <div class="cards__trash"></div>
           <img src="<%=require('./images/card-image-4.png')%>" alt="Новостная картинка" class="cards__image">
            <div class="cards__text-block">
@@ -60,7 +60,6 @@
           <p class="cards__text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
           <p class="cards__source">ДЗЕН</p>
         </div>
-      </div>
         <div class="cards__item">
           <div class="cards__trash"></div>
           <img src="<%=require('./images/card-image-5.png')%>" alt="Новостная картинка" class="cards__image">
@@ -101,10 +100,9 @@
           <h2 class="cards__title">Национальное достояние – парки</h2>
           <p class="cards__text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
           <p class="cards__source">АФИША</p>
-        </div>
+        </div>-->
       </div>
     </div>
-  </div>
   </section>
     <footer class="footer">
       <div class="footer__copyright">&copy; 2020 Supersite, Powered by News API</div>
