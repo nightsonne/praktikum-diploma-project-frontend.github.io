@@ -1,9 +1,9 @@
-.form__button_activ {
+.form__button_active {
   background-color: #2F71E5;
   color: #fff;
   transition: all 0.2s ease;
 }
 
-.form__button_activ:hover {
+.form__button_active:hover {
   background-color: #347EFF;
 }

@@ -15,3 +15,7 @@
     padding: 34px 36px 28px;
   }
 }
+
+.popup__content_hide{
+  display: none;
+}
